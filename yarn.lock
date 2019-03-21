@@ -1777,6 +1777,23 @@ babylon@^6.18.0:
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ==
 
+babylonjs-gltf2interface@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-gltf2interface/-/babylonjs-gltf2interface-3.3.0.tgz#0f83f9473d37f14c60562d234c972067f28b0076"
+  integrity sha512-88pHBewfAbH3CxzXOxKHsDtCDSy/RMyig0KiXscgHJLg2F0Ai+NdMEqm+7WCpWj0PpLg7tgR/3Z2fYsua7R6Fw==
+
+babylonjs-loaders@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babylonjs-loaders/-/babylonjs-loaders-3.3.0.tgz#7900badac3060eaec5aadb56f2fbbbb45e9b0e4c"
+  integrity sha512-Gqp/o/Mb9A/9uLKlUzk6jbzOm69Ftc+4MLDftR9D+VBPYkYfuR04Wx7Wb8W6ggIExmoN9JdGqVClN1OlkXzccg==
+  dependencies:
+    babylonjs-gltf2interface "3.3.0"
+
+babylonjs@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/babylonjs/-/babylonjs-3.3.0.tgz#f7636c3761cc3260dac8adf26767bc6323e74181"
+  integrity sha512-3Gn9kAEPejJN4+HMKGAKbhsCsrysvaORqi07Bdr9Xmy3KRt/BxyGwepzfcqFIe8+94SWszPDeJC9peICfHdCKw==
+
 bail@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.3.tgz#63cfb9ddbac829b02a3128cd53224be78e6c21a3"
@@ -7906,7 +7923,7 @@ react-dev-utils@^8.0.0:
     strip-ansi "5.0.0"
     text-table "0.2.0"
 
-react-dom@16.8.4:
+react-dom@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.8.4.tgz#1061a8e01a2b3b0c8160037441c3bf00a0e3bc48"
   integrity sha512-Ob2wK7XG2tUDt7ps7LtLzGYYB6DXMCLj0G5fO6WeEICtT4/HdpOi7W/xLzZnR6RCG1tYza60nMdqtxzA8FaPJQ==
@@ -7980,7 +7997,7 @@ react-scripts@2.1.8:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.8.4:
+react@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.4.tgz#fdf7bd9ae53f03a9c4cd1a371432c206be1c4768"
   integrity sha512-0GQ6gFXfUH7aZcjGVymlPOASTuSjlQL4ZtVC5YKH+3JL6bBLCVO21DknzmaPlI90LN253ojj02nsapy+j7wIjg==
