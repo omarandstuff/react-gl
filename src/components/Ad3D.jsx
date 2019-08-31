@@ -4,7 +4,7 @@ import "babylonjs-loaders";
 import * as BABYLON from "babylonjs";
 
 import "./Ad3D.css";
-import model from "../models/unotalks.obj";
+import model from "../models/tango.obj";
 import envTexture from "../textures/env.hdr";
 import diffuseTexture from "../textures/diffuse.png";
 import reflectionTexture from "../textures/reflect.png";
@@ -24,13 +24,13 @@ export default class Ad3D extends React.Component {
   componentDidMount() {
     const canvas = this.canvasRef.current;
 
-    this.canvasRef.current.onwheel = function(event){
-      event.preventDefault()
-    }
+    this.canvasRef.current.onwheel = function(event) {
+      event.preventDefault();
+    };
 
-    this.canvasRef.current.onmousewheel = function(event){
-      event.preventDefault()
-    }
+    this.canvasRef.current.onmousewheel = function(event) {
+      event.preventDefault();
+    };
 
     var engine = new BABYLON.Engine(canvas, true, {
       preserveDrawingBuffer: true,
@@ -87,7 +87,9 @@ export default class Ad3D extends React.Component {
           scene
         );
 
-        meshes[0].material = pbr;
+        for (let i = 0; i < meshes.length; i++) {
+          meshes[i].material = pbr;
+        }
       });
 
       return scene;
