@@ -6,8 +6,8 @@ import * as BABYLON from "babylonjs";
 import "./Ad3D.css";
 import model from "../models/tango.obj";
 import envTexture from "../textures/env.hdr";
-import diffuseTexture from "../textures/diffuse.png";
-import reflectionTexture from "../textures/reflect.png";
+import diffuseTexture from "../textures/albedo.png";
+import reflectionTexture from "../textures/roughness.jpg";
 
 const RAD_DEGREE_FACTOR = 0.0174533;
 
@@ -43,9 +43,9 @@ export default class Ad3D extends React.Component {
 
       var camera = new BABYLON.ArcRotateCamera(
         "camera1",
-        RAD_DEGREE_FACTOR * -90,
         RAD_DEGREE_FACTOR * 90,
-        6,
+        RAD_DEGREE_FACTOR * 90,
+        3.5,
         BABYLON.Vector3.Zero(),
         scene
       );
@@ -73,8 +73,8 @@ export default class Ad3D extends React.Component {
       ) {
         var pbr = new BABYLON.PBRMetallicRoughnessMaterial("pbr", scene);
         pbr.baseTexture = new BABYLON.Texture(diffuseTexture, scene);
-        pbr.metallic = 1;
-        pbr.roughness = 1;
+        pbr.metallic = 0.5;
+        pbr.roughness = 0.5;
         pbr.environmentTexture = new BABYLON.HDRCubeTexture(
           envTexture,
           scene,

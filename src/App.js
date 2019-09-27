@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="main-content">
-          <h1>Tango Source</h1>
-          <h2>Organized by Omaury Marmolejo</h2>
+          <h1>Chaska Talks</h1>
+          <h2>Organized by Agscode</h2>
           <p>
             Surprise steepest recurred landlord mr wandered amounted of.
             Continuing devonshire but considered its. Rose past oh shew roof is
